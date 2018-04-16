@@ -1,0 +1,37 @@
+body {
+    background: #212121;
+}
+main {
+    height: 100%;
+}
+#footer {
+    height: 100px;
+    background-color: crimson;
+    text-align: center;
+    width: 100%;
+}
+p {
+    font-family: ;
+    color: lightgrey;
+}
+
+.headpic {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
