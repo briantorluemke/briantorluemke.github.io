@@ -17,14 +17,14 @@ p {
 
 .headpic {
     position: relative;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
 .content {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
@@ -35,3 +35,22 @@ p {
     align-items: center;
 }
 
+.navpic {
+    width: 25%;
+    height: 675px;
+    overflow: no-display;
+}
+
+.container {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
