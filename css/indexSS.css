@@ -1,15 +1,29 @@
 body {
     background: #212121;
 }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        display: none;
+    }
+    }
+
 main {
     height: 100%;
 }
+
 #footer {
     height: 100px;
     background-color: crimson;
     text-align: center;
     width: 100%;
 }
+
 p {
     font-family: ;
     color: lightgrey;
@@ -17,8 +31,17 @@ p {
 
 .headpic {
     position: relative;
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    .headpic {
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .content {
@@ -38,10 +61,13 @@ p {
 .navpic {
     width: 25%;
     height: 675px;
-    overflow: no-display;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    position: relative;
 }
 
-.container {
+.navpics {
     margin-right: 0;
     margin-left: 0;
     width: 100%;
@@ -53,4 +79,42 @@ p {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+}
+
+.image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #131a1d;
+}
+
+.navpic:hover .overlay {
+    opacity: 0.75;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    margin-top: 2rem;
 }
